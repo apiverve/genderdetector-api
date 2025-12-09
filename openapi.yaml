@@ -1,0 +1,76 @@
+openapi: 3.0.4
+info:
+  title: Gender Detector
+  description: Easily detect the gender of an individual based on their name. This API uses AI to predict the likely gender of a person by their name
+  termsOfService: https://apiverve.com/terms/
+  contact:
+    name: APIVerve Support
+    email: hello@apiverve.com
+    url: https://apiverve.com/contact
+  version: 1.0.9
+externalDocs:
+  description: Learn more about APIVerve
+  url: https://docs.apiverve.com?utm_source=openapi
+servers:
+- url: https://api.apiverve.com/
+paths:
+  /v1/genderdetector:
+    get:
+      summary: Detect Gender
+      description: Easily detect the gender of an individual based on their name. This API uses AI to predict the likely gender of a person by their name
+      operationId: genderdetector
+      parameters:
+      - name: name
+        in: query
+        schema:
+          type: string
+        required: true
+        description: The name for which you want to detect the gender
+        example: John Mcdonald
+      - name: country
+        default: us
+        in: query
+        schema:
+          type: string
+        required: false
+        description: The country code for the name (e.g., US)
+        example: US
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: status
+                  error:
+                    type: string
+                    description: error
+                  data:
+                    type: string
+                    description: data
+              example:
+                status: ok
+                error: 
+                data:
+                  name: John Mcdonald
+                  country: US
+                  detected: true
+                  gender: male
+        '401':
+          description: Your request was not authorized, or your API Key was invalid
+        '404':
+          description: Requested resource was not found
+        '500':
+          description: A server error has occured, try again later
+components:
+  securitySchemes:
+    api_key:
+      type: apiKey
+      name: x-api-key
+      in: header
+security:
+- api_key: []
