@@ -16,7 +16,7 @@ const api = new genderdetectorAPI({
 // Example query
 var query = {
   name: "John Mcdonald",
-  country: "US"
+  country: "us"
 };
 
 // Make the API request using callback
