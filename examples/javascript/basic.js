@@ -13,13 +13,7 @@ const API_URL = 'https://api.apiverve.com/v1/genderdetector';
  */
 async function callGenderDetectorAPI() {
   try {
-    // Query parameters
-    const params &#x3D; new URLSearchParams({
-            name: &#x27;John Mcdonald&#x27;,
-            country: &#x27;US&#x27;
-        });
-
-    const response = await fetch(`${API_URL}?${params}`, {
+    const response = await fetch(API_URL, {
       method: 'GET',
       headers: {
         'x-api-key': API_KEY
