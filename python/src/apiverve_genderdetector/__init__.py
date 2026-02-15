@@ -1,1 +1,3 @@
-from .apiClient import GenderdetectorAPIClient
+from .apiClient import GenderdetectorAPIClient, GenderdetectorAPIClientError
+
+__all__ = ['GenderdetectorAPIClient', 'GenderdetectorAPIClientError']
