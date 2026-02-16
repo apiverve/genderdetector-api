@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/genderdetector",
-  "version": "1.1.13",
+  "version": "1.1.14",
   "description": "Easily detect the gender of an individual based on their name. This API uses AI to predict the likely gender of a person by their name",
   "main": "index.js",
   "types": "index.d.ts",
