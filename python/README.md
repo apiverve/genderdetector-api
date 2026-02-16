@@ -44,7 +44,10 @@ from apiverve_genderdetector.apiClient import GenderdetectorAPIClient
 # Initialize the client with your APIVerve API key
 api = GenderdetectorAPIClient("[YOUR_API_KEY]")
 
-query = { "name": "John Mcdonald", "country": "us" }
+query = {
+    "name": "John Mcdonald",
+    "country": "us"
+}
 
 try:
     # Make the API call
@@ -82,7 +85,10 @@ Using the API client, you can perform requests to the API.
 ###### Define Query
 
 ```python
-query = { "name": "John Mcdonald", "country": "us" }
+query = {
+    "name": "John Mcdonald",
+    "country": "us"
+}
 ```
 
 ###### Simple Request
@@ -123,7 +129,10 @@ from apiverve_genderdetector.apiClient import GenderdetectorAPIClient, Genderdet
 
 api = GenderdetectorAPIClient("[YOUR_API_KEY]")
 
-query = { "name": "John Mcdonald", "country": "us" }
+query = {
+    "name": "John Mcdonald",
+    "country": "us"
+}
 
 try:
     result = api.execute(query)
@@ -144,7 +153,10 @@ from apiverve_genderdetector.apiClient import GenderdetectorAPIClient, Genderdet
 
 api = GenderdetectorAPIClient("[YOUR_API_KEY]")
 
-query = { "name": "John Mcdonald", "country": "us" }
+query = {
+    "name": "John Mcdonald",
+    "country": "us"
+}
 
 try:
     result = api.execute(query)
@@ -178,7 +190,10 @@ The client supports the context manager protocol for automatic resource cleanup:
 ```python
 from apiverve_genderdetector.apiClient import GenderdetectorAPIClient, GenderdetectorAPIClientError
 
-query = { "name": "John Mcdonald", "country": "us" }
+query = {
+    "name": "John Mcdonald",
+    "country": "us"
+}
 
 # Using context manager ensures proper cleanup
 with GenderdetectorAPIClient("[YOUR_API_KEY]") as api:
@@ -204,7 +219,10 @@ from apiverve_genderdetector.apiClient import GenderdetectorAPIClient
 # Enable debug mode
 api = GenderdetectorAPIClient("[YOUR_API_KEY]", debug=True)
 
-query = { "name": "John Mcdonald", "country": "us" }
+query = {
+    "name": "John Mcdonald",
+    "country": "us"
+}
 
 # Debug information will be printed to console
 result = api.execute(query)
@@ -219,8 +237,12 @@ from apiverve_genderdetector.apiClient import GenderdetectorAPIClient
 
 api = GenderdetectorAPIClient("[YOUR_API_KEY]")
 
+query = {
+    "name": "John Mcdonald",
+    "country": "us"
+}
+
 try:
-    query = { "name": "John Mcdonald", "country": "us" }
     result = api.execute(query)
     print(result)
 finally:
