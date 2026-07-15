@@ -4,19 +4,31 @@ declare module '@apiverve/genderdetector' {
     secure?: boolean;
   }
 
+  /**
+   * Describes fields the current plan does not unlock. Locked fields arrive as null
+   * in `data`; `locked_fields` names them, using dot paths for nested fields.
+   * Absent when the plan unlocks everything.
+   */
+  export interface PremiumInfo {
+    message: string;
+    upgrade_url: string;
+    locked_fields: string[];
+  }
+
   export interface genderdetectorResponse {
     status: string;
     error: string | null;
     data: GenderDetectorData;
     code?: number;
+    premium?: PremiumInfo;
   }
 
 
   interface GenderDetectorData {
-      name:     string;
-      country:  string;
-      detected: boolean;
-      gender:   string;
+      name:     null | string;
+      country:  null | string;
+      detected: boolean | null;
+      gender:   null | string;
   }
 
   export default class genderdetectorWrapper {
