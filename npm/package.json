@@ -1,7 +1,7 @@
 {
   "name": "@apiverve/genderdetector",
-  "version": "1.2.0",
-  "description": "Easily detect the gender of an individual based on their name. This API uses AI to predict the likely gender of a person by their name",
+  "version": "1.2.2",
+  "description": "Gender Detector is a gender prediction API that estimates the likely gender of a person from their name. Pass a first name and get back the predicted gender as JSON, ready for salutations, profile defaults, or audience analysis.",
   "main": "index.js",
   "types": "index.d.ts",
   "sideEffects": false,
@@ -23,7 +23,7 @@
     "directory": "npm"
   },
   "keywords": [
-    "gender detector", "gender detection", "gender detect api", "gender detector api", "gender detection api"
+    "gender api", "gender detection api", "gender prediction api", "gender checker api", "gender classification api"
   ],
   "author": {
     "name": "APIVerve",
@@ -34,7 +34,7 @@
   "bugs": {
     "url": "https://github.com/apiverve/genderdetector-api/issues"
   },
-  "homepage": "https://apiverve.com/marketplace/genderdetector?utm_source=npm&utm_medium=homepage",
+  "homepage": "https://apiverve.com/marketplace/genderdetector?utm_source=npm&utm_medium=referral&utm_content=homepage",
   "devDependencies": {
     "mocha": "^11.0.1",
     "chai": "^5.1.2",
