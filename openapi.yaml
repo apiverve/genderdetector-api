@@ -2,8 +2,10 @@ openapi: 3.0.4
 info:
   title: Gender Detector
   description: >-
-    Easily detect the gender of an individual based on their name. This API uses
-    AI to predict the likely gender of a person by their name
+    Gender Detector is a gender prediction API that estimates the likely gender
+    of a person from their name. Pass a first name and get back the predicted
+    gender as JSON, ready for salutations, profile defaults, or audience
+    analysis.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
@@ -18,7 +20,7 @@ servers:
 paths:
   /v1/genderdetector:
     get:
-      summary: Detect Gender
+      summary: Gender Detector
       description: Detect the likely gender based on a given name
       operationId: genderdetector
       parameters:
@@ -34,7 +36,10 @@ paths:
           schema:
             type: string
           required: false
-          description: The country code for the name (e.g., US)
+          description: >-
+            The country code for the name (e.g., US). Recorded and echoed back
+            in the response, but detection does not yet vary by country - the
+            same name returns the same gender whichever code you pass
           example: US
       responses:
         '200':
