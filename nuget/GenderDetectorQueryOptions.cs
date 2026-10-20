@@ -17,7 +17,7 @@ namespace APIVerve.API.GenderDetector
         public string Name { get; set; }
 
         /// <summary>
-        /// The country code for the name (e.g., US)
+        /// The country code for the name (e.g., US). Recorded and echoed back in the response, but detection does not yet vary by country - the same name returns the same gender whichever code you pass
         /// </summary>
         [JsonProperty("country")]
         public string Country { get; set; }
