@@ -1,6 +1,6 @@
 # Gender Detector API - PHP Package
 
-Easily detect the gender of an individual based on their name. This API uses AI to predict the likely gender of a person by their name
+Gender Detector is a gender prediction API that estimates the likely gender of a person from their name. Pass a first name and get back the predicted gender as JSON, ready for salutations, profile defaults, or audience analysis.
 
 ## Installation
 
@@ -87,11 +87,11 @@ $client = new Client(
 
 ## Documentation
 
-For more information, visit the [API Documentation](https://docs.apiverve.com/ref/genderdetector?utm_source=packagist&utm_medium=readme).
+For more information, visit the [API Documentation](https://docs.apiverve.com/ref/genderdetector?utm_source=packagist&utm_medium=referral&utm_content=readme).
 
 ## Support
 
-- Website: [https://apiverve.com/marketplace/genderdetector?utm_source=php&utm_medium=readme](https://apiverve.com/marketplace/genderdetector?utm_source=php&utm_medium=readme)
+- Website: [https://apiverve.com/marketplace/genderdetector?utm_source=php&utm_medium=referral&utm_content=readme](https://apiverve.com/marketplace/genderdetector?utm_source=php&utm_medium=referral&utm_content=readme)
 - Email: hello@apiverve.com
 
 ## License
