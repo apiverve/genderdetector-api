@@ -1,7 +1,7 @@
 {
     "name": "apiverve/genderdetector",
-    "description": "Easily detect the gender of an individual based on their name. This API uses AI to predict the likely gender of a person by their name",
-    "version": "1.2.0",
+    "description": "Gender Detector is a gender prediction API that estimates the likely gender of a person from their name. Pass a first name and get back the predicted gender as JSON, ready for salutations, profile defaults, or audience analysis.",
+    "version": "1.2.2",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -15,13 +15,13 @@
         "api",
         "apiverve",
         "genderdetector",
-        "gender detector",
-        "gender detection",
-        "gender detect api",
-        "gender detector api",
-        "gender detection api"
+        "gender api",
+        "gender detection api",
+        "gender prediction api",
+        "gender checker api",
+        "gender classification api"
     ],
-    "homepage": "https://apiverve.com/marketplace/genderdetector?utm_source=php&utm_medium=homepage",
+    "homepage": "https://apiverve.com/marketplace/genderdetector?utm_source=php&utm_medium=referral&utm_content=homepage",
     "support": {
         "email": "hello@apiverve.com",
         "docs": "https://docs.apiverve.com/ref/genderdetector",
