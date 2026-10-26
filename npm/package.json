@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/genderdetector",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Gender Detector is a gender prediction API that estimates the likely gender of a person from their name. Pass a first name and get back the predicted gender as JSON, ready for salutations, profile defaults, or audience analysis.",
   "main": "index.js",
   "types": "index.d.ts",
