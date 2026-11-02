@@ -1,7 +1,7 @@
 name: apiverve_genderdetector
-description: Easily detect the gender of an individual based on their name. This API uses AI to predict the likely gender of a person by their name
-version: 1.1.14
-homepage: https://apiverve.com/marketplace/genderdetector?utm_source=dart&utm_medium=homepage
+description: "Gender Detector is a gender prediction API that estimates the likely gender of a person from their name. Pass a first name and get back the predicted gender as JSON, ready for salutations, profile defaults, or audience analysis."
+version: 1.2.4
+homepage: https://apiverve.com/marketplace/genderdetector?utm_source=dart&utm_medium=referral&utm_content=homepage
 repository: https://github.com/apiverve/genderdetector-api/tree/main/dart
 
 environment:

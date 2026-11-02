@@ -46,11 +46,11 @@ final _formatPatterns = {
 
 /// Gender Detector API client.
 ///
-/// For more information, visit: https://apiverve.com/marketplace/genderdetector?utm_source=dart&utm_medium=readme
+/// For more information, visit: https://apiverve.com/marketplace/genderdetector?utm_source=dart&utm_medium=referral&utm_content=readme
 ///
 /// Parameters:
 /// * [name] (required) - The name for which you want to detect the gender
-/// * [country] - The country code for the name (e.g., US) [minLength: 2, maxLength: 2]
+/// * [country] - The country code for the name (e.g., US). Recorded and echoed back in the response, but detection does not yet vary by country - the same name returns the same gender whichever code you pass [minLength: 2, maxLength: 2]
 class GenderdetectorClient {
   final String apiKey;
   final String baseUrl;
